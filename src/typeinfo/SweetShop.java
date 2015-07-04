@@ -23,7 +23,7 @@ public class SweetShop {
 		new Candy();
 		System.out.println("After creating Candy");
 		try {
-			Class.forName("Gum");
+			Class.forName("typeinfo.Gum");
 		} catch (ClassNotFoundException e) {
 			System.out.println("Couldn't find Gum");
 		}
