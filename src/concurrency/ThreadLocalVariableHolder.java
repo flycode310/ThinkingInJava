@@ -37,6 +37,6 @@ public class ThreadLocalVariableHolder {
 		for (int i = 0; i < 5; i++)
 			exec.execute(new Accessor(i));
 		TimeUnit.SECONDS.sleep(3);
-		exec.shutdown();
+		exec.shutdownNow();
 	}
 }
